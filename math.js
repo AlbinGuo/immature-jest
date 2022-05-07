@@ -6,7 +6,9 @@ function minus(a, b) {
   return a - b;
 }
 
-module.exports = {
-  add,
-  minus
-}
+try{
+  module.exports = {
+    add,
+    minus
+  }
+}catch(e){}
