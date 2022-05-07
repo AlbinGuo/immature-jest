@@ -10,11 +10,11 @@
 
 #### jest.config.js 配置
 
-`npx jest --init`
+```npx jest --init```
 
 #### 测试覆盖率报告
 
-`npx jest --coverage`
+```npx jest --coverage```
 
 #### babel
 
