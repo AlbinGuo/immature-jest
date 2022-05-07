@@ -6,7 +6,10 @@
   "dependencies": {
     "jest": "^24.8.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5"
+  },
   "scripts": {
     "test": "jest"
   },
