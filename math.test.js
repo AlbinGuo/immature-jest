@@ -6,6 +6,15 @@
 // }
 
 
+function test(description, callback) {
+  try{
+    callback();
+    console.log(`%c ${description} 测试通过`, 'color:green')
+  }catch(e){
+    console.log(`${description} -- ${e}`)
+  }
+}
+
 function expect(result) {
   return {
     toBe(expected){
@@ -16,5 +25,13 @@ function expect(result) {
   }
 }
 
-expect(add(1, 2)).toBe(3);
-expect(minus(3, 1)).toBe(2);
+test('测试加法', () => {
+  expect(add(1, 2)).toBe(3);
+})
+
+test('测试减法', () => {
+  expect(minus(3, 1)).toBe(2);
+})
+
+
+
