@@ -30,7 +30,7 @@ describe('Counter测试',() => {
    * 分组：测试addOne方法
    */
   describe('测试增加相关代码', () => {
-    test('测试Counter中addOne方法1', () => {
+    test.only('测试Counter中addOne方法1', () => {
       console.log('测试Counter中addOne方法1')
       counter.addOne();
       expect(counter.number).toBe(1);
