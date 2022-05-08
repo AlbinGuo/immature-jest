@@ -10,11 +10,11 @@
 
 #### jest.config.js 配置
 
-```npx jest --init```
+`npx jest --init`
 
 #### 测试覆盖率报告
 
-```npx jest --coverage```
+`npx jest --coverage`
 
 #### babel
 
@@ -37,3 +37,12 @@ npm install @babel/core@7.4.5 @babel/preset-env@7.4.5 -D
   ]
 }
 ```
+
+### Watch Usage
+
+> Press `f` to run only failed tests.
+> Press `o` to run tests related to changed files.
+> Press `p` to filter by a filename regex pattern.
+> Press `t` to filter by a test name regex pattern.
+> Press `q` to quit watch mode.
+> Press `Enter` to trigger a test run.
