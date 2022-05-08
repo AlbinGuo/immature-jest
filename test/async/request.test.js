@@ -1,10 +1,27 @@
-import { TestScheduler } from 'jest'
 import { fetchData } from '../../fetch'
 
-test('', () => {
-  fetchData(data => {
-    expect(data).toEqual({
+// test('异步请求的返回结果是：{success: true}', (done) => {
+//     fetchData(data => { 
+//       expect(data).toEqual({
+//         success: true
+//     })
+//     done()
+//   })
+// })
+
+test('异步请求的返回结果是：{success: true}', async (done) => {
+  const res = await fetchData()
+  if(res.data){
+    expect(res.data).toEqual({
       success: true
     })
+  }
+  done()
+})
+
+test('fetchData返回结果为 404', () => {
+  expect.assertions(1) // 表示期望有一个断言，expect会执行一次
+  return fetchData().catch(e => {
+    expect(e.toString().indexOf('404') > -1).toBe(true)
   })
 })

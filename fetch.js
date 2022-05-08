@@ -1,8 +1,12 @@
 import axios from "axios";
  
+// export const fetchData = (fn) => {
+//   axios.get('http://www.dell-lee.com/react/api/demo.json')
+//     .then(res => {
+//       fn(res.data)
+//     })
+// }
+
 export const fetchData = (fn) => {
-  axios.get('https://api.douban.com/v2/movie/subject/2')
-    .then(res => {
-      fn
-    })
+  return axios.get('http://www.dell-lee.com/react/api/demo1.json')
 }
