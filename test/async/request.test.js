@@ -25,3 +25,23 @@ test('fetchData返回结果为 404', () => {
     expect(e.toString().indexOf('404') > -1).toBe(true)
   })
 })
+
+test('fetchData返回结果为 { success: true }', () => {
+  return expect(fetchData()).resolves.toMatchObject({
+    data: {
+      success: true
+    }
+  })
+})
+
+test('fetchData返回结果为 404', () => {
+  return expect(fetchData()).rejects.toThrow('404')
+})
+
+test('fetch async', async () => {
+  try{
+    await fetchData()
+  }catch(e){
+    expect(e.toString()).toEqual('Error: Request failed with status code 404')
+  }
+})
