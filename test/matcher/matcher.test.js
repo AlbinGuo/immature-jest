@@ -94,7 +94,7 @@ test('测试数组', () => {
 })
 
 const throwNewError = () => {
-  throw new Error('this is a error')
+  throw new Error('this is ass error')
 }
 
 /**
