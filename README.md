@@ -46,3 +46,10 @@ npm install @babel/core@7.4.5 @babel/preset-env@7.4.5 -D
 - Press `t` to filter by a test name regex pattern.
 - Press `q` to quit watch mode.
 - Press `Enter` to trigger a test run.
+
+### TDD （Red to Green Development）
+
+- 编写测试用例
+- 运行测试，测试用例无法通过测试
+- 编写代码，使测试用例通过测试
+- 优化代码，完成开发
