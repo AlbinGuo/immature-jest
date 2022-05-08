@@ -94,12 +94,12 @@ test('测试数组', () => {
 })
 
 const throwNewError = () => {
-  throw new Error('测试异常')
+  throw new Error('this is a error')
 }
 
 /**
  * 异常匹配器
  */
 test('测试异常', () => {
-  expect(throwNewError).toThrow()
+  expect(throwNewError).toThrow(/this is an error/)
 })
